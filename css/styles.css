@@ -18,10 +18,22 @@ body {
     color: #F4AE3B;
     font-family: "Merriweather";
 }
+p {
+    font-size: 18px;
+}
+h3 {
+    font-family: "big-noodle";
+    font-size: 3em;
+}
 #lander {
     padding-bottom: 20px;
-    height:100vh;
+    height:85vh;
     width: 100vw;
+}
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /*.navbar-inverse {
@@ -40,6 +52,7 @@ ul {
 .affix {
      top: 0;
      width: 100%;
+     z-index: 16;
      /*margin: auto;*/
 }
 
@@ -68,6 +81,7 @@ li {
     background-color: #86BBD8;
     color: #2E4858;
     font-size: 1.6rem;
+    border-radius: 10px;
 
 
 }
@@ -125,13 +139,11 @@ li {
     /*height: 70px;*/
     display:block;
     color: #2E4858;
+    font-family: "big-noodle";
+    font-size: 2em;
+
 }
 
-/*a.li-button {
-    text-decoration: none;
-    color: #2E4858;
-
-}*/
 a:hover {
     text-decoration: none;
 }
@@ -144,8 +156,42 @@ a:hover {
 a:clicked {
     text-decoration: none;
 }
+.section-title, .tagline {
+    font-family: "big-noodle";
+    font-size: 4em;
+
+}
+.section-title {
+    padding-bottom: 30px;
+}
+#about {
+
+}
+#products {
+    padding-top: 50px;
+
+}
+#services {
+    padding-top: 50px;
 
 
+}
+#contact {
+    padding-top: 50px;
+}
+
+.carousel-image {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid orange;
+    border-radius: 5px;
+
+}
+.left.carousel-control, .right.carousel-control {
+    background: none;
+}
 
 @media screen and (max-width:800px) {
    .quick-quote {
@@ -158,6 +204,22 @@ a:clicked {
   .tagline {
       font-size: 2.5em;
   }
+  .container-fluid {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  ul {
+      width: 105%;
+  }
+  li {
+      width: 25%;
+      border-radius: 0;
+      font-size: 1em;
+  }
+  .navbar, .navbar-inverse {
+      margin: 0;
+  }
+
 
 
 }
