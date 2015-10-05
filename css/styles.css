@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "big-noodle";
+    src: url("../fonts/bignoodle_titling/big_noodle_titling.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #2E4858;
+    color: #F4AE3B;
+    font-family: "Merriweather";
+}
+#lander {
+    padding-bottom: 20px;
+    height:100vh;
+    width: 100vw;
+}
+
+/*.navbar-inverse {
+    height: 50px;
+}*/
+
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/*.container {
+    display: flex;
+}*/
+.affix {
+     top: 0;
+     width: 100%;
+     /*margin: auto;*/
+}
+
+#logoImage {
+    width:100%;
+
+}
+
+.quick-quote{
+    height: 60px;
+    width: 200px;
+    line-height: 2;
+    font-size: 2rem;
+    background-color: #F4AE3B;
+    color: #2E4858;
+    border: 1px solid #2E4858;
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    height: 50px;
+    line-height: 3;
+    background-color: #86BBD8;
+    color: #2E4858;
+    font-size: 1.6rem;
+
+
+}
+
+.navbar-inverse{
+    background-color: #2E4858;
+    border: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.affix + .container-fluid {
+   padding-top: 90px;
+}
+.landing-contact > h3 {
+    text-align: center;
+    margin: 0 50px 50px;
+    /*display: inline-block;*/
+}
+
+.landing-email {
+    height: 50px;
+    line-height: 2;
+    border: 0;
+    padding: 10px;
+    background-color: #86BBD8;
+    color: #2E4858;
+    font-size: 2rem;
+    margin: 50px 20px;
+    width: 60%;
+}
+::-webkit-input-placeholder {
+   color: #2E4858;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #2E4858;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #2E4858;
+}
+
+:-ms-input-placeholder {
+   color: #2E4858;
+}
+
+.tagline {
+    margin: 20px;
+    font-size: 3.5em;
+}
+
+.li-button {
+    width: 100%;
+    /*height: 70px;*/
+    display:block;
+    color: #2E4858;
+}
+
+/*a.li-button {
+    text-decoration: none;
+    color: #2E4858;
+
+}*/
+a:hover {
+    text-decoration: none;
+}
+/*.li-button:hover {
+    text-decoration: none;
+    outline-offset: 15px;
+    outline: 3px solid #F4AE3B;
+
+}*/
+a:clicked {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:800px) {
+   .quick-quote {
+    margin-top: -20px;
+    margin-bottom: 40px;
+  }
+  .landing-email {
+      width: 80%;
+  }
+  .tagline {
+      font-size: 2.5em;
+  }
+
+
+}
