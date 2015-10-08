@@ -48,10 +48,47 @@
         text-center">
             <form action="" class="">
                 <input type="text" class="landing-email" placeholder="email address..."></input>
-                <input type="submit" class="quick-quote" value="Get a quote"></input>
+                <input id="quickSubmit" type="submit" class="quick-quote" value="Get a quote" data-toggle="modal" data-target="#myModal"></input>
             </form>
         </div>
     <!-- Form -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel">Get a Quote</h3>
+            <p>Custom crates are our specialty—just like our name says.<br>Our sales team would love to hear about your project.</p>
+          </div>
+          <div class="modal-body">
+              <form class="quote-form">
+                  <input class="quote-input" type="text" placeholder="Your name"></input>
+                  <input class="quote-input" type="text" placeholder="Your company"></input>
+                  <input class="quote-input" type="text" placeholder="Your phone number"></input>
+                  <textarea class="quote-input" placeholder="Please describe the object to be crated."></textarea>
+                  <input class="quote-input" type="text" placeholder="Object Length - Width - Height"></input>
+                  <input class="quote-input" type="text" placeholder="Object Weight (estimate is fine)"></input>
+                  <p class="quote-text">Does the object require padding?</p>
+                  <input type="radio" name="padding" value="Yes" checked>Yes
+                  <input type="radio" name="padding" value="No">No
+                  <p class="quote-text">I am also interested in:</p>
+                      <input type="checkbox" value="On-Site Labor">On-Site Labor</input><br>
+                      <input type="checkbox">Moisture Barrier Bags</input><br>
+                      <input type="checkbox">Outside Processing</input><br>
+                      <input type="checkbox">Painted Crates</input><br>
+                      <input type="checkbox">Other:</input><input type="text"></input><br>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
     <!-- Contact info -->
         <!-- <div class="landing-contact
         col-xs-12

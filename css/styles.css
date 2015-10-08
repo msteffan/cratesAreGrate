@@ -192,6 +192,31 @@ a:clicked {
 .left.carousel-control, .right.carousel-control {
     background: none;
 }
+.quote-input, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 20px;
+    border: 2px solid #2E4858;
+    border-radius:5px;
+
+}
+.quote-form {
+    width: 90%;
+    margin: 10px;
+}
+.quote-text {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #2E4858;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    margin-left: 10px;
+
+}
 
 @media screen and (max-width:800px) {
    .quick-quote {
