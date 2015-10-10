@@ -99,7 +99,8 @@ li {
 .landing-contact > h3 {
     text-align: center;
     margin: 0 50px 50px;
-    /*display: inline-block;*/
+    font-family: "Merriweather";
+    font-size: 2em;
 }
 
 .landing-email {
@@ -232,7 +233,13 @@ footer {
 }
 
 
+
 @media screen and (max-width:800px) {
+    .landing-contact {
+        font-size: .7em;
+
+    }
+
     #map  {
         float: none;
         padding: 0 0 30px 0;
@@ -276,5 +283,8 @@ footer {
 @media (max-width: 500px) {
   .navbar {
     display: none;
+  }
+  #lander {
+      height: 70vh;
   }
 }
