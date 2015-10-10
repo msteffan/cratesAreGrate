@@ -111,7 +111,7 @@ li {
     background-color: #86BBD8;
     color: #2E4858;
     font-size: 2rem;
-    margin: 50px 20px;
+    margin: 20px 20px 100px;
     width: 60%;
 }
 ::-webkit-input-placeholder {
@@ -143,6 +143,10 @@ li {
     font-family: "big-noodle";
     font-size: 2em;
 
+}
+.form-holder {
+    width: 100%;
+    margin: 0;
 }
 
 a:hover {
@@ -231,7 +235,9 @@ footer {
     text-align: center;
     padding: 30px 0;
 }
-
+.contact-deets {
+    padding-left: 15px;
+}
 
 
 @media screen and (max-width:800px) {
@@ -257,6 +263,10 @@ footer {
   }
   .landing-email {
       width: 80%;
+      margin-bottom: 20px;
+  }
+  #quickSubmit {
+      margin-top: 20px;
   }
   .tagline {
       font-size: 2.5em;
