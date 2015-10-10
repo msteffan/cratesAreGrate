@@ -218,6 +218,10 @@ input[type="checkbox"], input[type="radio"]{
 
 }
 
+.item-name {
+    text-align: center;
+}
+
 @media screen and (max-width:800px) {
    .quick-quote {
     margin-top: -20px;

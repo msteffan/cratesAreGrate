@@ -47,7 +47,7 @@
         col-lg-10
         text-center">
             <form action="" class="">
-                <input type="text" class="landing-email" placeholder="email address..."></input>
+                <input type="email" class="landing-email" pattern="[^ @]*@[^ @]*" placeholder="email address..." required></input>
                 <input id="quickSubmit" type="submit" class="quick-quote" value="Get a quote" data-toggle="modal" data-target="#myModal"></input>
             </form>
         </div>
@@ -66,6 +66,7 @@
                   <input class="quote-input" type="text" placeholder="Your name"></input>
                   <input class="quote-input" type="text" placeholder="Your company"></input>
                   <input class="quote-input" type="text" placeholder="Your phone number"></input>
+                  <input id="form-email" class="quote-input" type="text"></input>
                   <textarea class="quote-input" placeholder="Please describe the object to be crated."></textarea>
                   <input class="quote-input" type="text" placeholder="Object Length - Width - Height"></input>
                   <input class="quote-input" type="text" placeholder="Object Weight (estimate is fine)"></input>
@@ -124,26 +125,42 @@
         <section>
             <h3>What makes us different?</h3>
             <p>Our customer service sets us apart. With 10 years of experience in the crating industry, we know and understand what customers are looking for. That's why we custom build every single crate we sell. We pride ourselves on service, as well as our great products.</p>
-            <p>We go on-site to take measurements for every order—in fact, we prefer to do it that way—and delivery from Crating Specialties is always free. You won't find that with any of our competitors.</p>
+            <p>We go on-site to take measurements for every order—in fact, we prefer to do it that way—and delivery from Crating Specialties is always free.</p>
         </section>
 
     </div>
     <div class="container-fluid" id="products">
         <h2 class="section-title">Products</h2>
-        <div id="productsCarousel" class="carousel slide main wrapper clearfix" data-ride="carousel">
+        <div id="productsCarousel" class="carousel slide main wrapper clearfix" data-ride="carousel" data-interval="false">
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
+              <h4 class="item-name">Custom Crates</h4>
               <img src="img/1.JPG" class="carousel-image" alt="product one" />
             </div>
             <div class="item">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">Shrink Wrap</h4>
+                <img src="img/shrink.JPG" class="carousel-image" alt="product one" />
             </div>
             <div class="item ">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">Moisure Barrier Bags</h4>
+                <img src="img/moisture.JPG" class="carousel-image" alt="product one" />
             </div>
             <div class="item ">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">Foam Padding</h4>
+                <img src="img/foam.JPG" class="carousel-image" alt="product one" />
+            </div>
+            <!-- <div class="item ">
+                <h4 class="item-name">Painted Crates</h4>
+                <img src="img/1.JPG" class="carousel-image" alt="product one" />
+            </div> -->
+            <div class="item ">
+                <h4 class="item-name">Railcar Securing</h4>
+                <img src="img/railcar.JPG" class="carousel-image" alt="product one" />
+            </div>
+            <div class="item ">
+                <h4 class="item-name">Ocean Container Blocking</h4>
+                <img src="img/blocking.JPG" class="carousel-image" alt="product one" />
             </div>
           </div>
 
@@ -161,6 +178,8 @@
                 <li data-target="#productsCarousel" data-slide-to="1"></li>
                 <li data-target="#productsCarousel" data-slide-to="2"></li>
                 <li data-target="#productsCarousel" data-slide-to="3"></li>
+                <li data-target="#productsCarousel" data-slide-to="4"></li>
+                <li data-target="#productsCarousel" data-slide-to="5"></li>
               </ol>
         </div>
 
@@ -171,16 +190,16 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">On-Site Labor</h4>
+                <img src="img/onsite.JPG" class="carousel-image" alt="product one" />
             </div>
             <div class="item">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">Outside Processing</h4>
+                <img src="img/outside.JPG" class="carousel-image" alt="product one" />
             </div>
             <div class="item ">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
-            </div>
-            <div class="item ">
-              <img src="img/1.JPG" class="carousel-image" alt="product one" />
+                <h4 class="item-name">Free Delivery</h4>
+                <img src="img/delivery.JPG" class="carousel-image" alt="product one" />
             </div>
           </div>
 
@@ -197,7 +216,7 @@
                 <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#servicesCarousel" data-slide-to="1"></li>
                 <li data-target="#servicesCarousel" data-slide-to="2"></li>
-                <li data-target="#servicesCarousel" data-slide-to="3"></li>
+                <!-- <li data-target="#servicesCarousel" data-slide-to="3"></li> -->
               </ol>
         </div>
 
@@ -212,6 +231,8 @@
                 <br />8226 South 208th Street
                 <br />Unit G101
                 <br />Kent, WA 98032</p>
+            <img src="img/map.png" alt="map">
+
     </div>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
