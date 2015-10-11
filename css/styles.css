@@ -27,8 +27,14 @@ h3 {
 }
 #lander {
     padding-bottom: 20px;
-    height:85vh;
+    height:90vh;
     width: 100vw;
+    background: url(../img/Crate_v2.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 .container-fluid {
@@ -230,6 +236,7 @@ input[type="checkbox"], input[type="radio"]{
 
 .item-name {
     text-align: center;
+    font-size: 2em;
 }
 #map {
     float: right;
@@ -302,5 +309,6 @@ footer {
   }
   #lander {
       height: 65vh;
+      background: none;
   }
 }
