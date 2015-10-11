@@ -86,6 +86,11 @@ li {
 
 }
 
+.typeform-widget {
+    margin-bottom: 50px;
+}
+
+
 .navbar-inverse{
     background-color: #2E4858;
     border: 0;
